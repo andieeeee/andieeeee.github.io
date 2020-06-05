@@ -1,0 +1,50 @@
+<html>
+<header>
+   <title>Music Player</title>
+   <link rel="stylesheet" type="text/css" href="ipod.css"/>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</header>
+<body>
+   <div id="screen">
+     <div class="head-bar">
+      <a href="songs.html"><div class="back-button"><b>&#8592;</b></div></a>
+   </div>
+   <img class="player-album-art" src="images/finest.jpeg" alt="Finest Album Cover"/>
+   <div>
+      <p id="player-song-name">Cracking Codes</p>
+      <p class="player-song-info"><em>My Finest Work Yet</em> - Andrew Bird</p>
+   </div>
+   <input id="slider" type="range" min="0" max="180" value="0">
+
+   <div id="player-time">0:00</div>
+   <div id="time-total">3:00</div>
+
+   <div class="player-controls">
+      <button onclick="prevSong()"><i class="material-icons">skip_previous</i></button>
+      <button onclick="switchPlay()"><i id="play_text" class="material-icons">play_arrow</i></button>
+      <button onclick="nextSong()"><i class="material-icons">skip_next</i></button>
+   </div>
+
+   <div class="volume-level">
+      <i class="material-icons"> volume_down</i>
+      <div id="vl0"></div>
+      <div id="vl1"></div>
+      <div id="vl2"></div>
+      <div id="vl3"></div>
+      <div id="vl4"></div>
+      <div id="vl5"></div>
+   </div>
+
+   <div class="volume-rocker">
+    <button id="volumeDown" onclick="volDown()">&mdash;</button>
+    <button id="volumeUp" onclick="volUp()">+</button>
+  </div>
+
+</div>
+<script src="ipood.js"></script>
+</body>
+</html>
+<!--
+* bg iphone img is 363x762px
+* iphone 'screen' is apprx 300x530 -->
