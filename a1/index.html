@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+<header>
+    <div class="words">
+        <h1>Andie Nolla</h1>
+        <p>Developer. Gamer. Dancer. Lover of animals.</p>
+    </div>
+    <div class="top-nav">
+        <a href="mailto:andrealnolla@gmail.com">Email Me</a>
+        <a href="about.html">About</a>
+        <a href="images/Andrea_Nolla_Resume.pdf">Resume</a>
+        <a href="index.html">Home</a>
+    </div>
+</header>
+<main>
+    <div class="full-height">
+        <title>Hi there!</title>
+        <button class="accordion">Generative Methods, Winter 2021</button>
+        <div class="panel">
+            <h2>Generative Methods Assignments</h2>
+
+            <table>
+                <tr>
+                    <th>Assignment</th>
+                    <th>Description</th>
+                    <th>Objective</th>
+                <tr>
+                    <td>Assignment 1:</td>
+                    <td>This!</td>
+                    <td>Getting familiarized with Git, HTML, JS, and CSS.</td>
+                </tr>
+                <tr>
+                    <td>Assignment 2:</td>
+                    <td><a href="../a2/index.html">Animation & GIFs</a></td>
+                    <td>Learn about canvases, seamless loops, and animating in JS.</td>
+                </tr>
+                <tr>
+                    <td>Assignment 3:</td>
+                    <td><a href="../a3/index.html">Drawing Tool</a></td>
+                    <td>Create different pens for users to create with using P5.</td>
+                </tr>
+                <tr>
+                    <td>Assignment 4:</td>
+                    <td><a href="../a4/index.html">Particle Movement</a></td>
+                    <td>Have Braintenberg-style and other forces impact particles on-screen.</td>
+                </tr>
+                <tr>
+                    <td>Assignment 5:</td>
+                    <td><a href="../a5/index.html">RosieBot</a></td>
+                    <td>Create a chatbot that uses Tracery to respond.</td>
+                </tr>
+            </table>
+        </div>
+
+        <button class="accordion">Game Development and Design, Fall 2020</button>
+        <div class="panel">
+            <p>this is for my games.</p>
+        </div>
+
+        <button class="accordion">Human-Computer Interaction, Spring 2020</button>
+        <div class="panel">
+            <p>this is for my HCI projects.</p>
+        </div>
+
+        <div class="myButton">
+            <button type="button" onclick="catEmergency()">Emergency Cats</button>
+        </div>
+        <div id="cats"></div>
+    </div>
+
+</main>
+
+<script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+</body>
+</html>
